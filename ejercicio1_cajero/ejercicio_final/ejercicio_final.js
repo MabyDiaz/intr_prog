@@ -19,10 +19,15 @@ function verificarMontoRetiro(monto) {
   }
 }
 
+function calcularSaldoCuenta(monto) {
+  saldoCuenta -= monto;
+  return saldoCuenta;
+}
+
 function realizarRetiro(monto) {
   if (verificarMontoRetiro(monto)) {
     if (monto <= saldoCuenta) {
-      saldoCuenta -= monto;
+      saldoCuenta = calcularSaldoCuenta(monto);
       mostrarMensaje(
         `${nombreUsuario}, tu retiro fue exitoso!!. Tu nuevo saldo es: $${saldoCuenta}`
       );
