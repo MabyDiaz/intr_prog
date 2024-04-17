@@ -1,4 +1,5 @@
 // Entrada
+//Definir variables
 let nombreUsuario = "Maby";
 let montoRetirar = parseFloat(prompt("Ingrese el monto a retirar"));
 let saldoCuenta = 20000;
