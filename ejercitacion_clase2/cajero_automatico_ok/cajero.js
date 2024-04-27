@@ -79,7 +79,9 @@ function utilizarCajero() {
     switch (opcion) {
       case 1:
         mostrarSaldo();
-        break;
+        break; 
+         
+        
       case 2:
         depositarDinero();
         break;
